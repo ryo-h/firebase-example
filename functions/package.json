@@ -1,0 +1,9 @@
+{
+  "name": "cloudfunction-firebase-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^8.10.0"
+  }
+}
