@@ -26,7 +26,8 @@ const App: React.FC = () => {
   if (user) {
     return (
       <div>
-        {/* <p>Current User: {user.email}</p> */}
+        <p>Current User: {user.email}</p>
+        {/* ↓データを表示するコンポーネント後述 */}
         <ExampleDataViewer user={user.uid} />
         <button onClick={logout}>Log out</button>
       </div>

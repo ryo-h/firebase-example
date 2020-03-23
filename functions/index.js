@@ -38,9 +38,7 @@ exports.readBucketFile = async (data, context) => {
   const record = await admin.firestore().collection('example').doc(file.name).get();
   console.log(record);
   const newValue = {
-    d: record.data().id,
-    userId: record.data().userId,
-    fileName: record.data().fileName,
+    ...record.data(),
     data: fileRecords
   };
   console.log(newValue);
